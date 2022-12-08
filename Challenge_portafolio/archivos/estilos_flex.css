@@ -1,0 +1,218 @@
+.header .contenedor {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.navegacion {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+}
+
+.titulo_contenido {
+    padding: 10px;
+    display:flex;
+}
+
+.titulo_redes {
+    display:flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.titulo_lista {
+    background-color: transparent;
+    text-decoration: none;
+    display:flex;
+    align-items: center;
+}
+
+.titulo_lista {
+    padding: 5px;
+    margin: 5px;
+    background-color: transparent;
+    text-decoration: none;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navegacion_link {
+    padding: 5px;
+    justify-content: center;
+    color:whitesmoke;
+    border: 2px solid rgb(58, 100, 100);
+    background-color: rgb(90, 156, 156);
+    border-radius: 5px;
+    text-decoration: none;
+    display:flex;
+    margin: 10px;
+    align-items: center;
+}
+
+.grid {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.proyecto_box {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    flex-wrap: wrap;
+}
+
+.descripcion {
+    width: 95%;
+    padding: 10px;
+    display:flex;
+    flex-wrap: wrap;
+    background-color: rgb(234, 247, 247);
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 20px 0 rgba(58, 100, 100, .5);
+}
+
+.contacto_formulario form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
+}
+
+.formulario {
+    background-color: rgb(234, 247, 247);
+    box-shadow: 0 0 20px 0 rgba(58, 100, 100, .5);
+    border-radius: 10px 10px 10px 10px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.contacto_imagen {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* responsive celular*/
+@media (max-width:768px){
+
+.header .contenedor {
+    flex-direction: column;
+    align-items:center;
+}
+
+.titulo_perfil {
+    width: 100px;
+    padding: 0px;
+}
+
+.titulo_contacto, .titulo_logo {
+    width: 60px;
+}
+
+.titulo {
+    margin-right: 0px;
+}
+
+.titulo_contenido {
+    flex-direction:column;
+    padding: 0px;
+    align-items: center;
+}
+
+.titulo_redes, .titulo_descripcion {
+    padding: 0px;
+}
+
+.titulo_caracteristicas {
+    margin: 5px;
+}
+
+.descripcion {
+    width: 98%;
+    padding: 5px;
+}
+
+.navegacion {
+    flex-direction:rows;
+    justify-content:center;
+    margin-left: 0px;
+}
+
+.navegacion_link {
+    padding: 4px;
+    margin: 2px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 14px;
+}
+
+h4, a, p {
+    font-size: 10px;
+}
+
+.conocimientos, .pasatiempos {
+    width: 98%;
+    padding: 5px;
+}
+
+.box_pasatiempos, .box_academia, .box_proyectos {
+    margin: 2px;
+}
+
+.icono {
+    list-style-image:none;
+    list-style-type:disclosure-closed;
+}
+
+.box_pasatiempos {
+    width: 110px;
+}
+
+.formulario {
+    grid-template-columns: none;
+}
+
+.contacto_formulario form p {
+    margin: 2px;
+    padding: 2px;
+}
+
+.contacto_formulario form button {
+    text-transform: uppercase;
+    padding: 2px;
+    font-size: 10px;
+    color: whitesmoke;
+}
+
+ul {
+    margin: 5px;
+    padding-left: 10px;
+}
+
+.titulo_proyecto {
+    width: 90px;
+    padding: 5;
+}
+
+.proyecto_box {
+    grid-template-columns: none;
+    flex-wrap: wrap;
+}
+
+}

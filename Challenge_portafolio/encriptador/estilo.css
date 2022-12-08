@@ -1,0 +1,170 @@
+
+/*Jairo Raul Urrego Saa / urregos.jairo@gmail.com / ONE-Grupo 3 / Challenge "Encriptador de texto" / Github: https://github.com/platino110/ * * * Colombia 16/08/2022*/
+
+/* css de los objetos con id container */
+.container-encripcion {
+    justify-content: space-between;
+    padding: 20px;
+    background-color:snow;
+    border-style: groove;
+}
+
+.container-resultado {
+    justify-content: space-between;
+    padding: 30px;
+    background-color:azure;
+    border-style: groove;
+    text-align: center;
+}
+
+.container-boton-copiar {
+    justify-content: space-between;
+    padding: 10px;
+    text-align: center;
+}
+
+.container-boton {
+    justify-content: space-between;
+    padding: 5px;
+    text-align: center;
+}
+
+.container-texto-final {
+    justify-content: space-between;
+    padding: 10px;
+    text-align: center;
+}
+
+.container{
+    margin: 50px 50px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+/* css de los objetos con textarea */
+.texto-desencriptar{
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 18px;
+    background:fixed;
+    padding: 10px;
+    height: 180px;
+    width: 500px;
+    border-radius: 10px;
+    border:2px solid transparent;
+    border-color: darkcyan;
+    outline:none;
+    resize: none;
+}
+
+.mensaje-resultado{
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 18px;
+    background:fixed;
+    padding: 10px;
+    height: 120px;
+    width: 400px;
+    border-radius: 10px;
+    border:2px solid transparent;
+    border-color: darkcyan;
+    outline:none;
+    resize: none;
+} 
+
+/* css de los objetos botones */
+.boton {
+    
+    border-radius:7px;
+    color: white;
+    padding: 10px 40px;
+    text-align: center;
+    font-size: 14px;
+    margin: 2px 2px;
+    transition-duration: 0.4s;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.encriptar {
+    background-color: darkcyan;
+    color: white;
+    border: 2px solid darkcyan; 
+}
+
+.desencriptar {
+    background-color: darkcyan;
+    color: white;
+    border: 2px solid darkcyan; 
+}
+
+.encriptar:hover {
+    background-color:cyan;
+    color: white;
+}
+
+.desencriptar:hover {
+    background-color: cyan;
+    color: white;
+}
+
+.copiar {
+    background-color: darkcyan;
+    color: white;
+    border: 2px solid darkcyan; 
+}
+
+.copiar:hover {
+    background-color: cyan;
+    color: white;
+}
+
+.pegar {
+    background-color: darkcyan;
+    color: white;
+    border: 2px solid darkcyan; 
+}
+
+.pegar:hover {
+    background-color: cyan;
+    color: white;
+}
+
+.limpiar {
+        background-color: darkcyan;
+        color: white;
+        border: 2px solid darkcyan; 
+}
+    
+.limpiar:hover {
+        background-color: cyan;
+        color: white;
+    
+}
+
+/* css de los objetos parrafo */
+p {
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid darkcyan;
+    padding: 7px;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif; 
+}
+
+/* css de los objetos del mensaje de alerta llamdo alerta-enabled */
+.alerta-enabled {
+    text-align: center;
+    border-radius: 10px;
+    border: 5px solid red;
+    padding: 7px;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    color: red;
+ 
+}
+
+/* css de los objeto imagen*/
+.imagen {
+    border-style: dashed;
+    border-color:darkcyan;
+    border-radius: 10px;
+} 
+

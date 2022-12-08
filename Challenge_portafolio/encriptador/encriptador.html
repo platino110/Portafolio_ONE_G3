@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--Jairo Raul Urrego Saa / urregos.jairo@gmail.com / ONE-Grupo 3 / Challenge "Encriptador de texto" / Github: https://github.com/platino110/ * * * Colombia 16/08/2022 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <main class="container">  
+      <section class="container-encripcion"> <!--inicio del contenedor del lado izquierdo-->
+        <div class="logo" style="text-align:center;"> <!--inicio del contenedor del logo-->
+            <svg>
+                <circle cx="70" cy="70" r="50" fill="#008b8b" />
+                <defs>
+                    <path id="miPath" d="M 30 85 L 180 60" stroke="#008b8b" stroke-width="3" fill="none"/>
+                </defs>
+                <use xlink:href="#miPath" fill="none" stroke="#0092b7" />
+                <text font-family="Arial" font-size="35">
+                    <textPath xlink:href="#miPath">
+                      Encriptor
+                    </textPath>
+                  </text>
+            </svg>
+        </div> <!--fin del contenedor del logo-->
+        <div class="container-texto"> <!--inicio del contenedor del texto para encriptar-->
+            <textarea class="texto-desencriptar" name="inputEncriptar" id="inputEncriptar" 
+                placeholder="Ingrese el texto aquí"></textarea>
+            <p class="alerta-disabled">
+              Ingrese letras minúsculas, sin caracteres especiales y sin acentos
+            </p>
+            <p class="alerta-enabled" style = "display: none;">
+              Usted esta ingresando letras mayusculas, caracteres especiales, acentos o no esta ingresando datos
+            </p>
+        </div> <!--fin del contenedor del texto para encriptar-->
+        <div class="container-boton"> <!--inicio del contenedor de los botones-->
+          <button id="encriptar" class="boton encriptar">Encriptar</button>
+          <button id="desencriptar" class="boton desencriptar">Desencriptar</button>
+          <button id="pegar" class="boton pegar">Pegar Texto</button>
+          <button id="limpiar" class="boton limpiar">Borrar texto</button>
+        </div> <!--fin del contenedor de los botones-->
+      </section> <!--fin del contenedor del lado izquierdo-->
+      <section class="container-resultado"> <!--inicio del contenedor del lado derecho-->
+        <article class="container-resultado-imagen" style = "display: none;"> <!--inicio del contenedor de imagen resultado-->
+          <img class="imagen" src="encontrado.jpg"/>
+        </article> <!--fin del contenedor de imagen resultado-->
+        <article class="container-texto-default"> <!--inicio del contenedor del texto e imagen informativa-->
+          <div class="container-imagen"> 
+            <img class="imagen" src="busqueda.jpg"/>
+          </div>
+          <div class="container-texto-encriptado">
+            <p>No se detecto texto que cumpla las condiciones para ser encriptado, ingrese el texto que desee encriptar o desencriptar</p>
+          </div>
+        </article> <!--fin del contenedor del texto e imagen informativa-->
+        <article class="container-texto-resultado"> <!--inicio del contenedor del resultado y boton copiar-->
+          <div class="container-boton-copiar"> 
+            <button id="copiar" class="boton copiar">Copiar Texto</button>
+          </div>
+          <div class="container-texto-final"> 
+            <textarea class="mensaje-resultado" style = "display: none;"></textarea>
+          </div>
+        </article>
+      </section> <!--fin  del contenedor del lado derecho-->
+      </main>
+      <script src="main.js"></script>
+    </body>
+</html>
